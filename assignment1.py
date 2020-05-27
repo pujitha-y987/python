@@ -38,12 +38,15 @@ list()
 
 [random.randrange(100,201) for i in range(1,6)] 
  
+random.sample([i for i in range(100,201)],5)
+
 
 #103 write a program to randomly generate a list with 5 numbers, which are divisible by 5 and 7 , between 1 and 1000 inclusive.
 
-[random.randrange(1,10001) for i in range(1,6) if i%5==0 and i%7==0] 
- 
+import random
 
+random.sample([i for i in range(1,1001) if i%5==0 and i%7==0] ,5)
+ 
  #102  Define a function that can convert a integer into a string and print it in console.	
  
  
@@ -55,8 +58,9 @@ inttostring()
  
 #101 Please write a program to output a random number, which is divisible by 5 and 7, between 0 and 10 inclusive using random module and list comprehension.
  
-[random.randrange(0,11) for i in range(1,6) if i%5==0 and 1%7==0] 
-  
+import random
+
+random.sample([i for i in range(0,11) if i%5==0 and i%7==0] ,5)
  
  
 
