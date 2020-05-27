@@ -98,6 +98,11 @@ print(" ".join(l1))
 print(" ".join(sorted(tuple(set(input().split())))))    
  
  
+ # 89 write a program to randomly print a integer number between 7 and 15 inclusive.
+
+import random
+print(random.randint(7,16)) 
+ 
  
  
  
