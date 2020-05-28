@@ -108,7 +108,14 @@ print(random.randint(7,16))
  
  random.sample([i for i in range(0,11,2)],1)
  
-  
+ # 24 Define a function that can accept two strings as input and concatenate them and then print it in console.
+def string(a,b):
+    print(a+" " +b)
+    
+ 
+string(input(),input())
+ 
+ 
  
  
  
