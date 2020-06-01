@@ -131,6 +131,13 @@ num1 = int(input("Enter first number: "))
 num2 = int(input("Enter second number: "))  
 print("The H.C.F. of", num1,"and", num2,"is", hcf(num1, num2))   
  
+# 25 Define a function which can generate a list where the values are square of numbers between 1 and 20 (both included). Then the function needs to print the last 5 elements in the list.
+def square():
+  l=[i**2  for i in range(1,21)]
+  print(l[-5:])  
+square()
+
+
  
  
  
