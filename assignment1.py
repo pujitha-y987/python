@@ -138,6 +138,22 @@ def square():
 square()
 
 
+# 26 By using list comprehension, please write a program to print the list after removing the 0th,4th,5th numbers in [12,24,35,70,88,120,155]. Hints: Use list comprehension to delete a bunch of element from a list. Use enumerate() to get (index, value) tuple.
+# using numpy
+import numpy as np
+a = ['a', 'l', 3.14, 42, 'u']
+I = [0, 2]
+np.delete(a, I).tolist()
+# Returns: ['l', '42', 'u']
+
+
+# using enmurate
+to_delete = [0, 4, 5]
+target = [12,24,35,70,88,120,155]
+for offset, index in enumerate(to_delete):
+  index -= offset
+  del target[index]
+print(target)
  
  
  
