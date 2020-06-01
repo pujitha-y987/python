@@ -155,7 +155,13 @@ for offset, index in enumerate(to_delete):
   del target[index]
 print(target)
  
- 
+# 27  Define a function which can generate a list where the values are square of numbers between 1 and 20 (both included). Then the function needs to print all values except the first 5 elements in the list.
+
+def square():
+  l=[i**2  for i in range(1,21)]
+  print(l)
+  print(l[5:])  
+square() 
  
   
  
