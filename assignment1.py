@@ -169,7 +169,11 @@ s1=input()
 y = eval(s1) 
 print(y)  
   
- 
+ # 29 Please generate a random float where the value is between 10 and 100 using Python math module.
+
+import random
+var1 = random.uniform(10,101)
+print(var1)
  
  
  
